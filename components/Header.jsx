@@ -1,17 +1,14 @@
 import Link from "next/link";
 
 const Header = () => (
-  <div className="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div id="headerComponent" className="navbar navbar-expand-lg navbar-dark bg-primary">
     <div className="container">
       <a href="#" className="navbar-brand">Next.js</a>
-      <button 
+      <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon"></span>
       </button>

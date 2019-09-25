@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Header";
 
 const Layout = props => (
-  <div>
+  <div id="layoutMain">
     <Header />
     {props.children}
   </div>

@@ -6,9 +6,11 @@ const Post = () => {
 
   return (
     <Layout>
-      <div>
-        <h1>{router.query.id}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt dolorem sunt tempore voluptate.</p>
+      <div id="postPage">
+        <div className="container">
+          <h1>{router.query.id}</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt dolorem sunt tempore voluptate.</p>
+        </div>
       </div>
     </Layout>
   );

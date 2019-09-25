@@ -1,0 +1,5 @@
+#baseButton {
+  /* Override css here */
+  border-radius: 25px;
+  padding: 0 16px;
+}
