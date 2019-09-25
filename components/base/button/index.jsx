@@ -9,7 +9,10 @@ const Button = (props) => {
   } = props;
 
   return (
-    <button id="baseButton" className={`btn btn-${size} btn-${color}`} {...buttonProps}>
+    <button
+      id="baseButton"
+      className={`btn btn-${size} btn-${color}`}
+      {...buttonProps}>
       {children}
     </button>
   );
