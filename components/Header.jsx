@@ -2,7 +2,7 @@ import { Container } from 'reactstrap';
 import Link from "next/link";
 
 const Header = () => (
-  <a>
+  <div>
     <Container>
       <Link href="/">
         <a title="Home">Home</a>
@@ -11,7 +11,7 @@ const Header = () => (
         <a title="About">About</a>
       </Link>
     </Container>
-  </a>
+  </div>
 );
 
 export default Header;
