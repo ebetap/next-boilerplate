@@ -1,10 +1,9 @@
-import { Container } from 'reactstrap';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout>
-    <Container>
+    <div>
       <h1>Hello world</h1>
       <ul>
         <li>
@@ -23,7 +22,7 @@ const Index = () => (
           </Link>
         </li>
       </ul>
-    </Container>
+    </div>
   </Layout>
 );
 

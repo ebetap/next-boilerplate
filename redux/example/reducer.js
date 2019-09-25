@@ -14,7 +14,7 @@ const exampleReducer = (state = initialState, action) => {
     case types.DECREMENT_NUMBER:
       return {
         ...state,
-        number: state.number + action.payload,
+        number: state.number - action.payload,
       };
     default:
       return state;
