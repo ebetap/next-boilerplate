@@ -19,6 +19,6 @@ const exampleReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default exampleReducer;

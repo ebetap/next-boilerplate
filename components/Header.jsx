@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { useRouter } from "next/dist/client/router";
+import Link from 'next/link';
+import { useRouter } from 'next/dist/client/router';
 
 const Header = () => {
   const { route } = useRouter();
@@ -7,7 +7,7 @@ const Header = () => {
   const getActiveLinkClass = (itemLink) => {
     if (route === itemLink) return 'nav-item nav-link active';
     return 'nav-item nav-link';
-  }
+  };
 
   return (
     <div id="headerComponent" className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -19,7 +19,7 @@ const Header = () => {
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
@@ -38,6 +38,6 @@ const Header = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

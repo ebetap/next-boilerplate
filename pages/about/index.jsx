@@ -1,8 +1,9 @@
-import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Layout from '../../components/Layout';
 import { Button } from '../../components/base';
-import { incrementNumber, decrementNumber } from '../../redux/example/actions'
+import dispatchers from './dispatchers';
+import states from './states';
 
 const About = (props) => {
   const { number, incrementNumber, decrementNumber } = props;
@@ -26,7 +27,9 @@ const About = (props) => {
                 Increase by 1
               </Button>
             </div>
-            <p className="font-italic">The state value above is persisted. When you increase/decrease it, the value will persist even if you refresh the page.</p>
+            <p className="font-italic">
+              The state value above is persisted. When you increase/decrease it, the value will persist even if you refresh the page.
+            </p>
           </div>
         </div>
       </div>
@@ -34,16 +37,19 @@ const About = (props) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  number: state.example.number,
-});
+About.propTypes = {
+  number: PropTypes.number,
+  incrementNumber: PropTypes.func,
+  decrementNumber: PropTypes.func,
+};
 
-const mapDispatchToProps = (dispatch) => bindActionCreators({
-  incrementNumber,
-  decrementNumber,
-}, dispatch);
+About.defaultProps = {
+  number: 0,
+  incrementNumber: () => {},
+  decrementNumber: () => {},
+};
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
+  states,
+  dispatchers,
 )(About);

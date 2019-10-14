@@ -1,11 +1,16 @@
+import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./Header";
+import Header from './Header';
 
-const Layout = props => (
+const Layout = ({ children }) => (
   <div id="layoutMain">
     <Header />
-    {props.children}
+    {children}
   </div>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;
