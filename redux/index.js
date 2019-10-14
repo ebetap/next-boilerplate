@@ -39,7 +39,7 @@ const makeStore = (initialState) => {
       rootReducer,
       initialState,
       composeWithDevTools(
-        applyMiddleware(thunk)
+        applyMiddleware(thunk),
       ),
     );
   }
