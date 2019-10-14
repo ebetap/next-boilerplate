@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import Header from './Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../assets/scss/global.scss';
+import '../assets/styles/custom.scss';
 
 const Layout = ({ children }) => (
   <div id="layoutMain">
